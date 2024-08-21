@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: jost;
+    background-color: blanchedalmond;
+}
+p{
+    font-family: Ubuntu;
+    line-height: 30px;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+ 
+}
+ul{
+    display: flex;
+    gap: 2rem;
+}
+a{
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    color: black;
+    padding: 2px;
+
+}
+a:hover{
+    border-bottom: 2px solid black;
+    font-size: 22px;
+    padding: 0;
+}
+button, #Intro button{
+    padding: 12px 18px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+}
+button:hover, #Intro button:hover{
+    background-color: transparent;
+    border: 1px solid orange;
+    color: black;
+}
+#Intro{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.right img{
+    height: 20rem;
+    width: auto;
+}
+.main{
+    padding: 5rem;
+    background-image: url(Media/cons.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top 8rem left 0;
+    text-align: center;
+    background-blend-mode: multiply;
+    color: white;
+}
+.main button{
+    animation: moveUpDown 1s infinite ease-in-out;
+}
+.main button:hover{
+    animation-play-state: paused;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+aside{
+    padding: 2rem;
+    gap: 2rem;
+    background-color: aliceblue;
+}
+aside main{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+aside main img{
+    height: 20rem;
+}
+#Serv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.services{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 4px 10px black;
+    width: 30%;
+    background-color: transparent;
+    margin: 1rem;
+    transition: transform .15s ease-in-out;
+    cursor: pointer;
+    
+}
+.services:hover{
+    border: 5px solid aliceblue;
+    background-color: white;
+    color: orange;
+    padding: 5px;
+    box-shadow: 0px 0px 0px;
+    transform: scale(1.02);
+}
+.services:hover svg{
+    fill: orange;
+}
+
+figure main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Mate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: white;
+}
+.Mate img{
+    width: 10rem;
+}
+figure{
+    padding: 5rem;
+    background-image: url(Media/cons.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top 8rem left 0;
+    text-align: center;
+    background-blend-mode: multiply;
+}
+.article{
+    background-color: white;
+    padding: 3rem;
+}
+.article div{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.article img{
+    width: 10rem;
+    height: 10rem;
+    transition: transform .2s ease-in-out;
+}
+.article:hover img:hover{
+    animation: moveUpDown 1s infinite ease-in-out;
+}
+.Contact{
+    padding: 4rem;
+}
+.Con{
+    display: flex;
+    justify-content: space-between;
+}
+input,select,textarea{
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid wheat;
+    padding:1rem;
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+}
+textarea{
+    height: 6rem;
+    resize: none;
+}
+.Tact{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    padding: 4rem;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Foot{
+    width: 50%;
+}
+.Foot h1{
+    text-align: left;
+}
+footer ul{
+    flex-direction: column;
+    text-wrap: nowrap;
+}
+footer ul a{
+    color: white;
+}
+.Ter{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer section{
+    display: flex;
+    gap: 2rem;
+}
+footer svg{
+    width: 3.2rem;
+    fill: gray;
+}
+section a:nth-child(1) svg:hover{
+    fill: blue;
+}
+section a:nth-child(2) svg:hover{
+    fill: red;
+}
+section a:nth-child(3) svg:hover{
+    fill: white;
+}
+
+section a:nth-child(2) svg:hover{
+    fill: red;
+}
+section a:nth-child(4) svg:hover{
+    fill: green;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@media screen and (max-width: 500px) {
+    #Intro{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    aside main{
+        flex-wrap: wrap;
+    }
+   .services{
+    width: 50%;
+   }
+   #may{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+   }
+   .Mate{
+    width:100%;
+   }
+   figure{
+    padding: 1rem;
+   }
+   .Con{
+    flex-wrap: wrap;
+    gap: 2rem;
+   }
+   iframe{
+    width: 20rem;
+    height: 20rem;
+   }
+   .Contact{
+    padding: 2rem;
+    justify-content: center;
+   }
+   footer{
+    background-color: red;
+    padding: 1rem;
+   }
+   .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+   .Foot, .footer ul, .Ter{
+    width:100%;
+   }
+   figure,.main{
+    background-position: top 8rem left -8rem;
+   }
+}
